@@ -2,6 +2,7 @@
 import { signIn, useSession } from "next-auth/react";
 import React from "react";
 import { SecondaryButton } from "./Button";
+// router is imported from nextNavigation
 import { useRouter } from "next/navigation";
 
 const Hero = () => {
