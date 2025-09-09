@@ -22,6 +22,7 @@ model User {
   solWallet SolWallet?
   inrWalletId String
   inrWallet InrWallet?
+  provider Provider
 }
 
 model InrWallet {
@@ -37,4 +38,8 @@ model SolWallet {
   privateKey String
   userId     String @unique
   user       User   @relation(fields: [userId],references: [id])
+}
+
+enum Provider{
+  Google
 }
